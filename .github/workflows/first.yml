@@ -4,10 +4,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NAME: "shibil"
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
       - name: print welcome
-        run: echo "welcome to build"
+        run: echo $NAME
       - name: print present working directory
         run: pwd
