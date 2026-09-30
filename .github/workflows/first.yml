@@ -11,5 +11,7 @@ jobs:
         uses: actions/checkout@v4
       - name: print welcome
         run: echo $NAME
-      - name: print present working directory
-        run: pwd
+      - name: print institution
+        env:
+          INSTITUTION: "Zoople"
+        run: echo $INSTITUTION
