@@ -15,3 +15,5 @@ jobs:
         env:
           INSTITUTION: "Zoople"
         run: echo $INSTITUTION
+      - name: test step
+        run: echo $INSTITUTION
